@@ -68,7 +68,7 @@ class Paint(object):
         self.old_x = None
         self.old_y = None
         self.color = 'black'
-        self.line_width = 10.0
+        self.line_width = 15.0
         self.eraser_on = False
         self.active_button = self.pen_button
         self.canv.bind('<B1-Motion>', self.draw)
@@ -91,7 +91,7 @@ class Paint(object):
         if self.old_x and self.old_y:
             self.canv.create_line(self.old_x, self.old_y, event.x, event.y,
                                width=self.line_width, fill=draw_color,
-                               capstyle=ROUND, smooth=TRUE, splinesteps=36)
+                               capstyle=ROUND, smooth=TRUE, splinesteps=72)
         self.old_x = event.x
         self.old_y = event.y
 
@@ -112,6 +112,7 @@ class Paint(object):
         loaded_model = tf.keras.models.model_from_json(loaded_model_json)
         loaded_model.load_weights("model.h5")
         arr = png_to_nparray("temp.png")
+        self.resetall()
         print("Shape of array is:", arr.shape)
         probability_model = tf.keras.Sequential([tf.keras.layers.Reshape((28,28)), 
                                                 loaded_model, 
@@ -120,7 +121,14 @@ class Paint(object):
         chars = "0123456789abcdefghijklmnopqrstuvwxyz"
         labelindex = np.argmax(predictions[0])
         chars_array=[i for i in chars]
-        plt.bar(chars_array,predictions[0])
+        fig_size = plt.rcParams["figure.figsize"]
+        fig_size[0] = 12
+        fig_size[1] = 6
+        plt.rcParams["figure.figsize"] = fig_size
+        fig, (p1,p2) = plt.subplots(1,2)
+        p1.imshow(arr)
+        p2.bar(chars_array,predictions[0])
+        plt.xlabel("Predicted output is: " + chars_array[labelindex])
         plt.show()
 
 if __name__ == '__main__':
