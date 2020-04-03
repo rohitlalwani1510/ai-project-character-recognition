@@ -112,18 +112,21 @@ class Paint(object):
         loaded_model = tf.keras.models.model_from_json(loaded_model_json)
         loaded_model.load_weights("model.h5")
         arr = png_to_nparray("temp.png")
-        print("Shape of array is:", arr.shape)
+        # print("Shape of array is:", arr.shape)
         probability_model = tf.keras.Sequential([tf.keras.layers.Reshape((28,28)), 
                                                 loaded_model, 
                                                 tf.keras.layers.Softmax()])
         predictions = probability_model.predict(np.array([arr]))
         chars = "0123456789abcdefghijklmnopqrstuvwxyz"
+        chars_arr = [i for i in chars]
         labelindex = np.argmax(predictions[0])
-        plt.figure()
-        plt.imshow(arr)
-        plt.xlabel(chars[labelindex])
-        plt.colorbar()
-        plt.grid(False)
+        # plt.figure()
+        # plt.imshow(arr)
+        # plt.xlabel(chars[labelindex])
+        # plt.colorbar()
+        # plt.grid(False)
+        # plt.show()
+        plt.bar(chars_arr, predictions[0])
         plt.show()
 
 if __name__ == '__main__':
