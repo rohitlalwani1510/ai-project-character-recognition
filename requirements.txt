@@ -1,4 +1,3 @@
 pillow
-tensorflow
 numpy
 matplotlib
