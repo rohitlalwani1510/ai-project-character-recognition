@@ -4,18 +4,10 @@ An AI based program which can recognize handwritten english alphabets and digits
 ###For windows:
 Make sure you have python3(along with pip) and ghostscript installed.  If not, you can install them using "python.exe", and for ghostscript using "ghostscript64.exe" for x64 based systems and using "ghostscript32.exe" for x32 based systems.<br>
 To install pip, enter the following command after installing python3<br>
-```
-python3 get-pip.py
-```<br>
+```python3 get-pip.py```<br>
 To install other requirements, enter the following command after installing pip<br>
-```
-python3 -m pip install -r requirements.txt
-```<br>
+```python3 -m pip install -r requirements.txt```<br>
 To train the model:<br>
-```
-python3 train.py
-```<br>
+```python3 train.py```<br>
 To predict the handwritten inputs:<br>
-```
-python3 main.py
-```<br>
+```python3 main.py```<br>
