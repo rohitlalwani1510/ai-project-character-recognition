@@ -9,8 +9,6 @@ To install other requirements:<br>
 pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl
 python3 -m pip install -r requirements.txt
 ```
-<br>
-<br>
 ### For Linux:
 Install python3 and pip3 using following commands:<br>
 ```
@@ -31,7 +29,6 @@ To install the other requirements, enter the following command:<br>
 ```
 pip3 install -r requirements.txt
 ```
-<br><br>
 ### After installation:
 To train the model:<br>
 ```
