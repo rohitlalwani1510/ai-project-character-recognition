@@ -5,8 +5,10 @@ An AI based program which can recognize handwritten english alphabets and digits
 Make sure you have python3(along with pip) and ghostscript installed.  If not, you can install them using "python.exe", and for ghostscript using "ghostscript64.exe" for x64 based systems and using "ghostscript32.exe" for x32 based systems.<br>
 To install emnist dataset, execute the file named as "emnist-0.0-py3-none-any.whl"<br>
 To install other requirements:<br>
-```pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl```<br>
-```python3 -m pip install -r requirements.txt```<br>
+```
+pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.0-py3-none-any.whl
+python3 -m pip install -r requirements.txt
+```
 <br>
 <br>
 ### For Linux:
