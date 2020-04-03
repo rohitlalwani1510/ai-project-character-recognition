@@ -10,7 +10,8 @@ To install other requirements:<br>
 ### For Linux:
 Install python3 and pip3 using following commands:<br>
 ```apt-get install python3<br>
-apt-get install python3-pip```<br>
+apt-get install python3-pip<br>
+```
 To install tkinter module, enter the following command:<br>
 ```apt-get install python3-tk```<br>
 To install the other requirements, enter the following command:<br>
