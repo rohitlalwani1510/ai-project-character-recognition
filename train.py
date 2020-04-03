@@ -4,6 +4,7 @@ from emnist import extract_training_samples
 from emnist import extract_test_samples
 import matplotlib.pyplot as plt
 import numpy as np
+#import seaborn as sns
 
 # print(list_datasets())
 
