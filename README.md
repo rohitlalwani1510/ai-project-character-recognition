@@ -13,11 +13,14 @@ python3 -m pip install -r requirements.txt
 <br>
 ### For Linux:
 Install python3 and pip3 using following commands:<br>
-```apt-get install python3
+```
+apt-get install python3
 apt-get install python3-pip
 ```
 To install tkinter module, enter the following command:<br>
-```apt-get install python3-tk```<br>
+```
+apt-get install python3-tk
+```
 To install emnist module, enter the following commands:<br>
 ```
 tar -xvzf emnist-0.0.tar.gz
@@ -25,10 +28,16 @@ cd emnist-0.0
 python3 setup.py
 ```
 To install the other requirements, enter the following command:<br>
-```pip3 install -r requirements.txt```<br>
+```
+pip3 install -r requirements.txt
+```
 <br><br>
 ### After installation:
 To train the model:<br>
-```python3 train.py```<br>
+```
+python3 train.py
+```
 To predict the handwritten inputs:<br>
-```python3 main.py```<br>
+```
+python3 main.py
+```
