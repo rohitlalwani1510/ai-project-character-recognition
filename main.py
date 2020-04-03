@@ -120,7 +120,7 @@ class Paint(object):
         chars = "0123456789abcdefghijklmnopqrstuvwxyz"
         labelindex = np.argmax(predictions[0])
         chars_array=[i for i in chars]
-        plt.bar(chars_arry,predictions[0])
+        plt.bar(chars_array,predictions[0])
         plt.show()
 
 if __name__ == '__main__':
