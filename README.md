@@ -17,6 +17,7 @@ To install tkinter module, enter the following command:<br>
 To install the other requirements, enter the following command:<br>
 ```pip3 install -r requirements.txt```<br>
 <br><br>
+### After installation:
 To train the model:<br>
 ```python3 train.py```<br>
 To predict the handwritten inputs:<br>
