@@ -23,7 +23,7 @@ To install emnist module, enter the following commands:<br>
 ```
 tar -xvzf emnist-0.0.tar.gz
 cd emnist-0.0
-python3 setup.py
+sudo python3 setup.py install
 ```
 To install the other requirements, enter the following command:<br>
 ```
